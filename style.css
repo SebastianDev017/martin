@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Estilos Inicio y Acerca*/
+.fullbar{
+background: linear-gradient(rgba(5,7,12, 0.60), rgba(5,7,12, 0.60)), url(background.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.fullbar::before{
+	content: '';
+	top: 10px;
+
+}
+header{
+	width: 100%;
+}
+nav{
+	margin: 0px auto;
+	width: 100%;
+	max-width: 99.7%;
+	-webkit-box-shadow: 0 0 5px .5px #000000;
+	box-shadow: 0 0 5px .5px #000000;
+}
+nav ul{
+	list-style: none;
+}
+nav > ul{
+	display: table;
+	overflow: hidden;
+	width: 100%;
+	background-color: white;
+	position: relative;
+}
+nav >ul li{
+	display: table-cell;
+}
+
+nav>ul li a{
+	color: black;
+	display: block;
+	line-height: 20px;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
+	background-color:rgb(255, 255, 255);
+	font-family:'Raleway', 'Merriweather';
+	font-size: 20px;
+}
+nav > ul >li>ul>li a:hover{
+background:#5da5a2;
+}
+nav>ul>li>a span{
+	background: black;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: -55px;
+}
+nav>ul>li>a span .icon{
+display: block;
+line-height: 60px;
+}
+nav>ul>li>a:hover>span{
+	top:0;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
+}
+/*Barra de navegacion colores*/
+nav ul li a .productos{
+	background: red;
+	color: white;
+}
+nav ul li a .servicios{
+	background: black;
+	color: white;
+}
+nav ul li a .ubicacion{
+	background: black;
+	color: white;
+}
+nav ul li a .contactanos{
+	background: black;
+	color: white;
+}
+nav ul li a .acerca{
+	background: black;
+	color: white;
+}
+/*Barra de navegacion colores*/
+
+/*logos de productos*/
+.navlogo{
+	margin: 10px auto;
+}
+/*logos de productos*/
+.equipo{
+	text-align: center;
+	margin: 15px auto;
+	font-family: 'Merriweather';
+	color: red;
+	font-size: 25px;
+}
+p{
+font-family: 'Roboto Slab';
+color: white;
+font-size: 20px;
+max-width: 100%;
+margin: 15px auto;
+}
+.divlogo{
+	max-width: 400px;
+	height: 400px;
+	display: flex;
+	margin: auto;
+}
+.logo{
+	z-index: 1;
+	width: 400px;
+margin: auto;
+max-width: 400px;
+height: 400px;
+}
+.contain1{
+	max-width: 100%;
+	color: black;
+	margin: auto;
+	border: 1px solid black;
+	background-image: url(containback.jpg);
+	padding: 10px;
+}
+.equipoimg{
+	max-width: 60%;
+	margin: 10px 30px 10px 30px;
+	border: 2px solid black;
+	height: auto;
+}
+.contain2{
+	max-width: 100%;
+	color: black;
+	margin: auto;
+	border: 1px solid black;
+	background-image: url(idea6.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+/*Estilos Inicio y Acerca*/
+
+/*Estilos productos*/
+.productosh1{
+	max-width: 100%;
+	color: black;
+	margin: auto;
+	padding: 10px;
+	background-size: 10%;
+	background-repeat:repeat-x;
+}
+/*Estilos productos*/
+/*Productos*/
+.mul{
+display: grid;
+grid-template-columns: repeat(auto-fit, 250px);
+grid-template-rows: .1fr;
+grid-gap: .1em;
+background-image: url(download.jpg);
+}
+.productosdiv{
+	max-width: 200px;
+	display: flex;
+	flex-flow: column;
+	border-radius: 6px;
+	box-shadow: 0px 0px 0px 1px black;
+	margin-top: 20px;
+	margin-left: 50px;
+	background: rgba(215, 215, 215, 0.3);
+}
+.productosdiv:hover{
+	box-shadow: 0px 0px 0px 1.5px black;
+	transition-property: box-shadow;
+	transition-duration: 0.2s;
+	background: rgba(191, 191, 191, 0.5);
+	transition-property: background;
+}
+.imgproduct{
+	width: 100%;
+	object-fit: cover;
+	border: 1px solid black;
+}
+.informacion{
+	border-top: 1px solid black;
+	padding: 1em;
+	display: flex;
+	flex-flow: column;
+}
+.informacion * + *{
+	margin-bottom: .7em;
+}
+.precioo{
+	font-size: 1.4em;
+	margin-top: 1em;
+	font-family: 'Merriweather';
+}
+.adquiere a{
+	color: rgb(20, 190, 20);
+	text-decoration: none;
+	font-family: 'Merriweather';
+}
+.productoo{
+	margin-top: 3px;
+	font-size: 18px;
+	font-family: 'Merriweather';
+}
+.adquiere a:hover{
+	padding: 4px;
+	transition-duration: .2s;
+}
+/*Productos*/
+/*Servicios*/
+.slider-contain{
+	background: url(download.jpg);
+}
+.slider-frame{
+	max-width:900px;
+	height: 250px;
+	margin: 30px auto 20px;
+	overflow: hidden;
+}
+.slider-frame ul{
+	display: flex;
+	padding: 0;
+	width: 435%;
+	animation: slider 16s infinite ease-in-out;
+}
+.slider-frame li{
+	list-style: none;
+	width: 100%;
+
+}
+.slider-frame img{
+	width: 100%;
+padding: 10px;
+}
+@keyframes slider{
+	0% {margin-left: 0%;}
+	20%{margin-left: 0%;}
+
+	25% {margin-left: -100%;}
+	45%{margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70%{margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	95%{margin-left: -300%;}
+
+	125% {margin-left: -500%;}
+	140%{margin-left: -500%;}
+
+	150% {margin-left: -600%;}
+	165%{margin-left: -600%;}
+
+	175% {margin-left: -700%;}
+	190%{margin-left: -700%;}
+
+	200% {margin-left: -800%;}
+	215%{margin-left: -800%;}
+
+	225% {margin-left: -900%;}
+	240%{margin-left: -900%;}
+
+	250% {margin-left: -1000%;}
+	265%{margin-left: -1000%;}
+
+	275% {margin-left: -1100%;}
+	290%{margin-left: -1100%;}
+}
+/*Servicios*/
+/*Ubicacion*/
+.containubicacion{
+	background-image: url(idea6.jpg);
+	max-width: 100%;
+	height: 330px;
+	color: black;
+	margin: auto;
+	border: 1px solid black;
+	padding: 12px;
+}
+.ubicacion-maps{
+	float: right;
+	height: auto;
+}
+.text-ubicacion{
+	float: left;
+	padding:10px;
+}
+.text-ubicacion p{
+	font-size: 16px;
+	text-align: center;
+	width: 350px;
+}
+.text-ubicacion h1{
+	float: left;
+	text-align: center;
+	margin: auto;
+	color: red;
+	font-family: 'Roboto Slab';
+	width: 400px;
+	max-width: 400px;
+	margin-bottom: 10px;
+}
+/*Ubicacion*/
+/*Contacto*/
+.containcontact{
+max-width: 100%;
+color: black;
+margin: auto;
+border: 1px solid black;
+background-image: url(containback.jpg);
+padding: 10px;
+height: 100%;
+}
+.contactbar{
+	padding: 10px;
+	display: flex;
+}
+.contactul{
+	list-style: none;
+	color: white;
+	font-family: 'Merriweather';
+	padding: 10px;
+	position: relative;
+	margin: auto;
+}
+.contactul li a{
+	color: white;
+	line-height: 10px;
+	padding: 10px;
+	position:relative;
+	text-align: center;
+	text-decoration: none;
+	
+}
+.contactul li{
+	line-height: 20px;
+	padding: 10px;
+	display: table-cell;
+}
+.contactul li a:hover{
+padding: 14px;
+	transition-property: padding;
+	transition-duration: 0.2s;
+}
+/*Contacto*/
+@media  screen and (max-width: 800px){
+	h1{
+		font-size: 16px;
+	}
+	p{
+		font-size: 16px;
+	}
+	nav ul li a{
+		font-size: 13px;
+	}
+	.mul{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 200px);
+		grid-template-rows: .1fr;
+		grid-gap: .1em;
+		background-image: url(download.jpg);
+		}
+		.productosdiv{
+			max-width: 150px;
+			display: flex;
+			flex-flow: column;
+			border-radius: 6px;
+			box-shadow: 0px 0px 0px 1px black;
+			cursor: pointer;
+			margin-top: 20px;
+			margin-left: 50px;
+			background: rgba(215, 215, 215, 0.3);
+			height: 380px;
+		}
+		.containservicios{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, 200px);
+			grid-template-rows: .1fr;
+			grid-gap: .1em;
+			background: rgba(239, 237, 237, 0.672);
+		}
+		.serviciosdiv{
+			max-width: 200px;
+			display: flex;
+			flex-flow: column;
+			border-radius: 6px;
+			box-shadow: 0px 0px 0px 1px black;
+			cursor: pointer;
+			margin-top: 20px;
+			margin-left: 50px;
+			background: rgba(215, 215, 215, 0.3);
+		}
+		.videooo{
+			display: block;
+			top: 45px;
+		}
+	
+	.precioo{
+		font-size: 18px;
+		margin-top: 1em;
+		font-family: 'Merriweather';
+	}
+	.adquiere a{
+		color: rgb(20, 190, 20);
+		text-decoration: none;
+		font-family: 'Merriweather';
+		font-size: 12px;
+	}
+	.productoo{
+		margin-top: 3px;
+		font-size: 14px;
+		font-family: 'Merriweather';
+	
+	}
+}
+		@media  screen and (max-width: 930px){
+		.containservicios{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, 250px);
+			grid-template-rows: .5fr;
+			grid-gap: .5em;
+			background: rgba(239, 237, 237, 0.672);
+		}
+		.serviciosdiv{
+			max-width: 200px;
+			display: flex;
+			flex-flow: column;
+			border-radius: 6px;
+			box-shadow: 0px 0px 0px 1px black;
+			cursor: pointer;
+			margin-top: 20px;
+			margin-left: 50px;
+			background: rgba(215, 215, 215, 0.3);
+		}
+	}
+	@media  screen and (max-width: 560px){
+		.videooo{
+			width: 150px;
+			height: 200px;
+			margin: auto;
+			display: flex;
+			position: absolute;
+		}
+		
+	}
+	@media  screen and (max-width: 520px){
+		.videooo{
+			width: 100px;
+			height: auto;
+			margin: auto;
+			display: flex;
+			position: absolute;
+		}
+	}
+	@media  screen and (max-width: 480px){
+		.videooo{
+			display: block;
+			top: 120px;
+		}
+		.imgubi{
+			display: block;
+			right:45px;
+		}
+		.containservicios{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, 250px);
+			grid-template-rows: .5fr;
+			grid-gap: .5em;
+			margin: auto auto auto 100px;
+		}
+		.carrousel{
+			max-width: 90%;
+			margin-left: 15px;
+		 }
+		 .slider-frame{
+			max-width:900px;
+			height: 100px;
+			margin: 30px auto 20px;
+			overflow: hidden;
+		}
+		.slider-frame ul{
+			display: flex;
+			padding: 0;
+			width: 435%;
+			animation: slider 16s infinite ease-in-out;
+		}
+	}
+	@media  screen and (max-width: 380px){
+		.videooo{
+			display: block;
+			position: relative;
+			top: 150px;
+			width: 25%;
+			left: 20px;
+		}
+		.divlogo{
+			max-width: 300px;
+			height: 300px;
+			display: flex;
+			margin: auto;
+		}
+		.logo{
+			z-index: 1;
+			width: 300px;
+		margin: auto;
+		max-width: 300px;
+		height: 300px;
+	}
+}
+	@media screen and (max-width: 400px){
+		.mul{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, 180px);
+			grid-template-rows: .1fr;
+			grid-gap: .1em;
+			background-image: url(download.jpg);
+			}
+			.productosdiv{
+				max-width: 180px;
+				height: 370px;
+				display: flex;
+				flex-flow: column;
+				border-radius: 6px;
+				box-shadow: 0px 0px 0px 1px black;
+				cursor: pointer;
+				margin-top: 20px;
+				margin-left: 50px;
+				background: rgba(215, 215, 215, 0.3);
+			}
+	}
+	@media screen and (max-width:745px) {
+		.containubicacion{
+			background-image: url(idea6.jpg);
+			max-width: 100%;
+			height: 330px;
+			color: black;
+			margin: auto;
+			border: 1px solid black;
+			padding: 12px;
+		}
+		.ubicacion-maps{
+			float: right;
+		}
+		.text-ubicacion{
+			float: left;
+			padding:10px;
+		}
+		.text-ubicacion p{
+			font-size: 14px;
+			text-align: center;
+			width: 200px;
+		}
+		.text-ubicacion h1{
+			float: left;
+			text-align: center;
+			margin: auto;
+			color: white;
+			font-family: 'Roboto Slab';
+			width: 250px;
+			max-width: 250px;
+			margin-bottom: 10px;
+			font-size: 20px;
+		}
+	}
+	@media screen and (max-width:600px) {
+		.containubicacion{
+			background-image: url(idea6.jpg);
+			max-width: 100%;
+			height: 500px;
+			color: black;
+			margin: auto;
+			border: 1px solid black;
+			padding: 12px;
+			display: flex;
+			flex-direction: column;
+		}
+		.ubicacion-maps{
+			height: auto;
+			width: 80%;
+			display: flex;
+			margin: auto;
+		}
+		.text-ubicacion{
+			padding:10px;
+		}
+		.text-ubicacion p{
+			font-size: 12px;
+			text-align: center;
+			width: 300px;
+		}
+		.text-ubicacion h1{
+			float: left;
+			text-align: center;
+			margin: auto;
+			color: white;
+			font-family: 'Roboto Slab';
+			width: 100%;
+			max-width: 100%;
+			margin-bottom: 10px;
+		}
+	}
